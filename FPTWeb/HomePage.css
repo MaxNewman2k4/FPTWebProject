@@ -34,6 +34,17 @@
     margin-bottom: 24px
 }
 
+.box-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 5px 5px 0 5px;
+    border-radius: 6px
+}
 
 .row-flex {
     display: -webkit-box;
@@ -201,6 +212,28 @@ div{
         -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
         box-shadow: 0 0 10px 0 rgba(0,0,0,.15)
     }
+
+.main-wrapper .ct-item-a {
+    display: block;
+    height: 100%
+}
+
+    .main-wrapper .ct-item-a .cate-item-name {
+        color: var(--black)
+    }
+
+    .main-wrapper .ct-item-a .cate-item .picture .line {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        background-color: #777
+    }
+
+        .main-wrapper .ct-item-a .cate-item .picture .line:not(:last-child) {
+            margin-right: 3.5px
+        }
+
 .main-wrapper .f15-bold {
     font-size: 15px;
     font-weight: 700
@@ -243,6 +276,51 @@ img {
             border-radius: 4px
 
 }
+
+.bn-list {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.bn-list a {
+        display: block;
+        text-align: center;
+        border-radius: 6px;
+        text-decoration: none;
+        padding: 8px 7.5px 15px
+}
+
+.bn-list a:hover .list-tit, .bn-list a:focus .list-tit {
+            color: #0050d7;
+            font-weight: bold
+}
+
+li.bn-item.list-item {
+    max-width: 270px
+}
+
+.bn-list li:not(:last-child) {
+    margin-right: 20px
+}
+
+.bn-sale {
+    text-align: center;
+    padding: 32px 0 30px 0
+}
+
+.bn-sale .bn-list {
+   justify-content: center
+}
+
+.bn-sale .bn-item a {
+   padding: 10px 20px 20px
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
 
 
 
